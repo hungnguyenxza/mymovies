@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craw Film</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">High kick 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/tomjerry">Tom & Jerry</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>High kick 2</h1>
+    <p>The comedies film</p>
+  </div>
+
+  <div class="container" style="margin-top:30px">
+    <div class="row py-1">
+      <span>Last EP:</span>&nbsp;<span class="text-info" id="current-watched">Gia đình là số 1 phần 2 - Tập 01
+        (Lồng Tiếng) HD</span>
+      <span class="watch-next ml-1" style="opacity: 0; transition: all 0.5s linear;"> =>
+        <button type="button" id="watch-next" onclick="watchNext()" class="btn btn-link p-0">Watch next</button>
+      </span>
+    </div>
+    <div class="row">
+      <div class="">Episode:</div>
+      <div id="list-episode" style="line-height: 35px;"></div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="watching" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <iframe src="" frameborder="0" id="iframe-view" class="w-100"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <script src="playlist.js"></script>
+  <script src="bookmarklet.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
