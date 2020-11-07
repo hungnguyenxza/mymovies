@@ -29,8 +29,10 @@ let currentWatched = (index) => {
       setTimeout(() => $('.watch-next').css('opacity', 1), 1000);
     }
   }
-  // $('#iframe-view').attr('src', getEmbedUrl(url));
-  // $('#watching').modal('show');
+  // $('#iframe-view').attr('src', url);
+  // setTimeout(() => {
+  //   $('#watching').modal('show');
+  // }, 1000);
   window.open(url, '_blank');
 }
 
